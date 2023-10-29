@@ -21,11 +21,11 @@ url = "https://tmpfiles.org/dl/2986992/service.json"
 
 r = requests.get(url)
 print(r.json())
-f = open("service.json", "a")
+f = open("servicee.json", "a")
 f.write(str(r.text))
 f.close()
 
-gc = pygsheets.authorize(service_file="service.json")
+gc = pygsheets.authorize(service_file="servicee.json")
 
 
 #Create a service account key and downlaod the key json(make sure google sheets api is enabled)
@@ -40,7 +40,7 @@ Gen = []
 Total = []
 
 #replace with the index of your last
-last = 153
+last = 200
 
 for i in range(2, last):
     purl=wks.cell('F'+str(i)).value
