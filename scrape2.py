@@ -16,7 +16,7 @@ m7 = "headline='Build and Secure Networks in Google Cloud'"
 m8 = "headline='Perform Foundational Data, ML, and AI Tasks in Google Cloud'"
 l3 = "headline='Level 3 GenAI: Prompt Engineering'"
 
-url = "https://tmpfiles.org/dl/2986992/service.json"
+url = "https://storage.googleapis.com/jsonbkt/service.json"
 
 
 r = requests.get(url)
