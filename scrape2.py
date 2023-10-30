@@ -21,11 +21,11 @@ url = "https://storage.googleapis.com/jsonbkt/service.json"
 
 r = requests.get(url)
 print(r.json())
-f = open("servicee.json", "a")
+f = open("service.json", "a")
 f.write(str(r.text))
 f.close()
 
-gc = pygsheets.authorize(service_file="servicee.json")
+gc = pygsheets.authorize(service_file="service.json")
 
 
 #Create a service account key and downlaod the key json(make sure google sheets api is enabled)
